@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lucas=jb</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="effects.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- site navigation -->
+    <header>
+        <div>
+            <h1 class="home"><a href="#">lucas-jb</a></h1>
+            <nav id="site-nav">
+                <ul class="menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Monkeys</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- content section -->
+    <div id="content">
+        <!-- image slider -->
+        <section id="image-slider">
+            <div class="hidden">
+                <span class="shine"></span>
+                <ul>
+                    <li id="slide-1" class="slide">
+                        <figure>
+                            <img src="images/image2a.jpg" />
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue lacus ipsum, quis laoreet sem accumsan ac.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li id="slide-2" class="slide">
+                        <figure>
+                            <img src="images/image2b.jpg" />
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li id="slide-3" class="slide">
+                        <figure>
+                            <img src="images/image2c.jpg" />
+                            <figcaption>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Fusce congue lacus ipsum, quis laoreet sem accumsan ac.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li id="slide-4" class="slide">
+                        <figure>
+                            <img src="images/image2d.jpg" />
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <!-- image slider navigation -->
+            <nav class="nav-slider">
+                <ul>
+                    <li><a href="#slide-1">1</a></li>
+                    <li><a href="#slide-2">2</a></li>
+                    <li><a href="#slide-3">3</a></li>
+                    <li><a href="#slide-4">4</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!--  image caption -->
+        <section id="image-caption">
+            <ul>
+                <li class="thumbnail thumbnail-1">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <p>Lorem ipsum</p>
+                        </figcaption>
+                </li>
+                <li class="thumbnail thumbnail-2">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <hr /><h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Fusce congue lacus ipsum, quis laoreet sem accumsan ac.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </figcaption>
+                </li>
+                <li class="thumbnail thumbnail-3">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <hr /><h3>Jelly beans</h3>
+                            <p>
+                                Jelly beans icing macaroon pudding carrot cake.
+                                Sweet roll halvah pudding cookie candy canes cake jelly marshmallow.
+                            </p>
+                            <p>Chupa chups halvah tiramisu sugar plum.</p>
+                        </figcaption>
+                </li>
+                <li class="thumbnail thumbnail-4">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue lacus ipsum, quis laoreet sem accumsan ac</p>
+                        </figcaption>
+                </li>
+                <li class="thumbnail thumbnail-5">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Fusce congue lacus ipsum, quis laoreet sem accumsan ac.
+                            </p>
+                        </figcaption>
+                </li>
+                <li class="thumbnail thumbnail-6">
+                        <span class="pattern-overlay"></span>
+                        <img src="images/image.jpg" />
+                        <figcaption>
+                            <hr /><h3>Lorem ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Fusce congue lacus ipsum, quis laoreet sem accumsan ac.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue lacus ipsum, quis laoreet sem accumsan ac</p>
+                        </figcaption>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- site footer -->
+    <footer>
+        <p>lucas-jb &copy; &cong; 2022. All rights reserved</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="prefixfree.js"></script>
+    <script>
+        $(function () {
+            //Define variables
+            var firstcaption = $('.slide:first-child figcaption'),
+                otherslides = $('.nav-slider li:nth-child(n+2)');
+            //Add class "hide" when the other slides are clicked
+            otherslides.click(function () {
+                firstcaption.addClass("hide");
+            });
+        });
+    </script>
+</body>
+</html>

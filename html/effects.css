@@ -1,0 +1,123 @@
+#site-nav li a {
+    transition: all 500ms;
+}
+
+    #site-nav li a:hover {
+        color: #ffb400;
+    }
+
+#image-slider li img {
+    transition: all 1s linear;
+}
+
+#image-slider li figcaption {
+    transition: all 500ms ease-in-out 300ms;
+}
+
+#image-slider li:target img {
+    opacity: 1;
+}
+
+#image-slider li:target figcaption {
+    transform: translateY(-100%) !important;
+}
+
+#image-slider li:first-child figcaption {
+    transform: translateY(-100%);
+}
+
+    #image-slider li:first-child figcaption.hide {
+        transform: translateY(0);
+    }
+
+.nav-slider li a {
+    transition: all 1s ease-out;
+}
+
+    .nav-slider li a:hover {
+        background: #89c53f;
+        border: 1px solid #467536;
+        transition: all 300ms ease-in;
+    }
+
+    .nav-slider li a:active {
+        background: #467536;
+        border: 1px solid #20411d;
+        transition: all 50ms;
+    }
+
+.thumbnail img {
+    transition: all 350ms;
+}
+
+.thumbnail-1 figcaption {
+    transition: all 350ms linear;
+}
+
+.thumbnail-2 figcaption {
+    transition: all 350ms ease-in 350ms;
+}
+
+.thumbnail-3 figcaption {
+    transition: all 350ms ease-out;
+}
+
+.thumbnail-4 figcaption {
+    transition: all 500ms ease-in-out;
+}
+
+    .thumbnail-4 figcaption p {
+        transition: all 350ms ease-in-out 500ms;
+    }
+
+.thumbnail-5 figcaption, .thumbnail-5 img {
+    transition: all 350ms cubic-bezier(.1,.72,.68,.68);
+}
+
+.thumbnail-6 figcaption, .thumbnail-6 img {
+    transition: all 500ms;
+}
+
+.thumbnail:hover img {
+    opacity: 0.3;
+}
+
+.thumbnail-1:hover figcaption {
+    transform: translateY(-100%);
+    margin-top: -10px;
+}
+
+.thumbnail-2:hover figcaption {
+    transform: translateY(190px);
+}
+
+.thumbnail-3:hover figcaption {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.thumbnail-4:hover figcaption {
+    transform: rotate(0deg) translateY(-100%);
+    margin-top: -10px;
+}
+
+    .thumbnail-4:hover figcaption p {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+.thumbnail-5:hover figcaption, .thumbnail-5:hover img {
+    transform: translateY(-90px);
+}
+
+.thumbnail-6:hover img {
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0;
+}
+
+.thumbnail-6:hover figcaption {
+    transform: scale(1);
+    transform-origin: 0 0;
+    opacity: 1;
+}
